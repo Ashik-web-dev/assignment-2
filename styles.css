@@ -1,0 +1,348 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222; /* Dark background */
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Title and Subtitle Styles */
+h1, h2, h3 {
+    color: rgb(255, 255, 255); /* Pure white for titles */
+}
+
+p {
+    color: rgba(255, 255, 255, 0.5); /* 50% opacity for subtitles */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 20px 50px;
+}
+
+.logo h2 {
+    color: rgb(255, 255, 255); /* Pure white for logo title */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255); /* Pure white for navbar links */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(230, 83, 60); /* Hover color remains the primary color */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #111; /* Dark background */
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text {
+    margin-bottom: 20px; /* Add spacing between text and buttons */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    margin-bottom: 50px;
+}
+
+.cta-buttons .btn {
+    padding: 15px 40px;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.primary-btn {
+    background: rgb(230, 83, 60); /* Primary color for Join button */
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #c35440;
+}
+
+.secondary-btn {
+    background: white;
+    color: rgb(230, 83, 60);
+}
+
+.secondary-btn:hover {
+    background: #f1f1f1;
+    color: #c35440;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.stats div {
+    text-align: center; /* Center text for stats */
+}
+
+.stats div h3 {
+    font-size: 2.5rem;
+}
+
+.stats div p {
+    font-size: 1.2rem;
+}
+
+
+
+/* Core Features Section */
+.core-features {
+    background-color: #111; /* Dark background for the section */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.core-features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+    gap: 40px;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Round Image */
+.round-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensure the image stays round and centered */
+    margin-bottom: 20px;
+}
+
+/* Run an Extra Mile Section */
+.run-extra-mile {
+    background-color: #111; /* Dark background to match the theme */
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+}
+
+.text-section {
+    flex: 1;
+    text-align: left;
+}
+
+.text-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.text-section .btn {
+    padding: 15px 30px;
+    background-color: rgb(230, 83, 60); /* Primary button color */
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 500px; /* Adjust image size */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Trainings and Exercises Section */
+.trainings-exercises {
+    background-color: #111; /* Dark background */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.trainings-exercises h2 {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255); /* Pure white for title */
+    margin-bottom: 20px;
+}
+
+.trainings-exercises p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5); /* 50% opacity for subtitle */
+    margin-bottom: 40px;
+}
+
+.exercises-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+    gap: 40px;
+}
+
+.exercise-item {
+    text-align: center;
+}
+
+.exercise-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.exercise-item h3 {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255); /* Pure white for exercise names */
+    margin-bottom: 10px;
+}
+
+.exercise-item p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5); /* 50% opacity for exercise descriptions */
+    line-height: 1.5;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Ensure column direction on small screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .cta-buttons .btn {
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr; /* Stack features on small screens */
+        gap: 20px;
+    }
+
+    .core-features h2 {
+        font-size: 2rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        text-align: center;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
