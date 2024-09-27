@@ -5,16 +5,21 @@
     box-sizing: border-box;
     
 }
-
+.font-size-40{
+    font-size: 40px;
+font-weight: 900;
+}
 body {
     font-family: 'Arial', sans-serif;
     background-color: #222; /* Dark background */
-    color: white;
-    max-width: 75%;
+    
+    
+}
+.bg-size{
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-
 a {
     text-decoration: none;
     color: inherit;
@@ -29,15 +34,11 @@ p {
     color: rgba(255, 255, 255, 0.5); /* 50% opacity for subtitles */
     font-size: 14px;
 }
-
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    padding: 20px 50px;
+.whait-p{
+    color: rgb(255, 255, 255)
 }
+/* Navbar Styles */
+
 
 .display-flex{
     display: flex;
@@ -80,7 +81,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    
     padding: 0 20px;
 }
 
@@ -91,21 +92,27 @@ p {
 }
 
 .hero-text {
-    margin-bottom: 20px; /* Add spacing between text and buttons */
+    margin-bottom: 20px; 
+    margin-top: 98px;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+
+font-size: 78px;
+font-weight: 900;
+
 }
 
 .hero-content p {
     font-size: 1.3rem;
+    margin-top: 28px;
     margin-bottom: 40px;
 }
 
 .cta-buttons {
-    margin-bottom: 50px;
+    margin-top: 28px;
+    
 }
 
 .cta-buttons .btn {
@@ -137,28 +144,39 @@ p {
 }
 
 /* Stats Section */
-.stats {
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.overlay-button {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.54);
+    color: #333;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.button-top-right {
+    top: 120px;
+    right: -74px;
+}
+.button-bottom-left {
+    bottom: 10px;
+    left: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-top: 40px;
 }
 
-.stats div {
-    text-align: center; /* Center text for stats */
+.stylish-round{
+    width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: #c35440;
+margin-right: 10px;
 }
-
-.stats div h3 {
-    font-size: 2.5rem;
-}
-
-.stats div p {
-    font-size: 1.2rem;
-}
-
-
-
 /* Core Features Section */
 .core-features {
     background-color: #111; /* Dark background for the section */
@@ -208,7 +226,7 @@ p {
     color: white;
     padding: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border:solid black 0.2px ;
     border-radius: 20px;
@@ -219,7 +237,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 1200px;
+    
     width: 100%;
     gap: 40px;
 }
@@ -477,6 +495,10 @@ font-weight: 900;
     color: white;
 }
 
+.footer{
+    background-color: rgb(34, 34, 34);
+}
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -486,6 +508,7 @@ font-weight: 900;
     margin: 0 auto;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    
 }
 
 .footer-logo {
