@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body class="both-side-margin">
     <!-- Hero Section -->
     <header class="hero-section">
         <nav class="navbar">
@@ -74,7 +74,7 @@
     <section class="run-extra-mile">
         <div class="content-wrapper">
             <div class="text-section">
-                <h2>Run an Extra Mile Easily</h2>
+                <h2>Run an Extra <br> Mile Easily</h2>
                 <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts, we’re here to help you run the extra mile effortlessly.</p>
                 <a href="#" class="btn primary-btn">Join Now</a>
             </div>
@@ -86,42 +86,57 @@
     
 
 
-    <section class="bmi-calculator">
-        <h2>BMI Calculator</h2>
-        <p>Calculate your Body Mass Index (BMI) to determine your ideal weight range.</p>
-        
-        <div class="calculator-form">
-            <div class="form-group">
-                <label for="height">Height (cm):</label>
-                <input type="number" id="height" name="height" placeholder="Enter your height">
+    <section class="bmi-section">
+        <div class="bmi-wrapper">
+            <!-- Left side: BMI Table -->
+            <div class="bmi-table">
+                <h3>BMI Categories</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 – 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 – 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
     
-            <div class="form-group">
-                <label for="weight">Weight (kg):</label>
-                <input type="number" id="weight" name="weight" placeholder="Enter your weight">
+            <!-- Right side: BMI Input Form -->
+            <div class="bmi-input">
+                <h3>Calculate Your BMI</h3>
+                <div class="input-group display-flex">
+                    
+                    <input type="number" class="marjin-tght" placeholder="Height/CM">
+                    <input type="number"  placeholder="Weight/KG">
+                </div>
+                <div class="input-group display-flex ">
+                    <input type="number" class="marjin-tght" placeholder="Age">
+                    <input type="number" c placeholder="SEX">
+                </div>
+                <div class="input-group">
+                    <input type="number"  placeholder="Select an activity factor">
+                </div>
+                <button class="btn primary-btn" >Calculate BMI</button>
+                
             </div>
-    
-            <div class="form-group">
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" placeholder="Enter your age">
-            </div>
-    
-            <div class="form-group">
-                <label for="activity">Activity Level:</label>
-                <select id="activity" name="activity">
-                    <option value="sedentary">Sedentary</option>
-                    <option value="light">Lightly Active</option>
-                    <option value="moderate">Moderately Active</option>
-                    <option value="very">Very Active</option>
-                </select>
-            </div>
-    
-            <button class="btn primary-btn" onclick="calculateBMI()">Calculate BMI</button>
-        </div>
-    
-        <div class="bmi-result">
-            <h3>Your BMI: <span id="bmi-value">--</span></h3>
-            <p id="bmi-status"></p>
         </div>
     </section>
     
@@ -173,6 +188,44 @@
     </section>
     
     <!-- Meet Our Team Section  -->
+    
+    <!-- footer section  -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2 class="footer-title">Fitness</h2>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+            </div>
+    
+            <div class="footer-links">
+                <h3>Home</h3>
+                <ul>
+                    
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Home</h3>
+                <ul>
+                    
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fitness Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
     
 </body>
 </html>
